@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.aynlss.jumboxproject.ui.login.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/logInToSignUp"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/logInToMainGraph"
+            app:destination="@id/main_graph"
+            app:popUpTo="@id/login_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.aynlss.jumboxproject.ui.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/signUpToLogIn"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/signUpToMainGraph"
+            app:destination="@id/main_graph"
+            app:popUpTo="@id/login_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <include app:graph="@navigation/main_graph" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.aynlss.jumboxproject.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/splashToLogIn"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/splashToMainGraph"
+            app:destination="@id/main_graph"
+            app:popUpTo="@id/login_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

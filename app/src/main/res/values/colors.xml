@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color5">#4997ba</color>
+    <color name="color6">#566998</color>
+    <color name="color7">#69c1d3</color>
+    <color name="color9">#303369</color>
+    <color name="color10">#fe9043</color>
+    <color name="color12">#80303369</color>
+    <color name="splash">#002750</color>
+    <color name="success">#85C8E3</color>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "99837970455",
+    "project_id": "jumboxproject",
+    "storage_bucket": "jumboxproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99837970455:android:df34ffe2ff281f03f6b452",
+        "android_client_info": {
+          "package_name": "com.aynlss.jumboxproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4u5KdCW2oLJIxsniqgF30ToOLoKUVSVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
